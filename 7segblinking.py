@@ -36,9 +36,7 @@ GPIO.setup(d1, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(d2,GPIO.OUT, initial=GPIO.LOW)
 GPIO.add_event_detect(17, GPIO.RISING) 
 GPIO.add_event_detect(27,GPIO.RISING)
-print("sdfs")
-print(onoff)
-print(startstop)
+
 while True:
     if GPIO.event_detected(27):
         if onoff == "off":
